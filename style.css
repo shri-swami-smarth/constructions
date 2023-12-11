@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+
+:root {
+    --headerclr: /* your header background color */;
+    --mainclr: /* your main color for hover effect */;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2s;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 2rem 7%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#logo {
+    color: blue;
+    font-size: 30px;
+}
+
+.nav a {
+    color: white;
+    margin-left: 1rem;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 95px;
+    padding: 5px;
+    background: black;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.icon-header div {
+    color: white;
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon-header i:hover {
+    color: yellow;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.nav.active {
+    top: 100%;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid green;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search-form.active {
+    top: 100%;
+}
+
+.background-image {
+    background: url(dda.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.inner-back-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-btn,
+.second-btn {
+    padding: 2rem 4rem;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+.backbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.backbtn a {
+    margin-right: 1rem;
+}
+
+.first-btn:hover,
+.second-btn:hover {
+    background: yellow;
+    color: white;
+}
+
+.welcome {
+    padding: 3rem 7%;
+    background-image: url(gk.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.main-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.welcome-text {
+    font-size: 24px;
+}
+
+.welcome-text a {
+    padding: 1rem 3rem;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.welcome-text a:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.ram {
+    padding: 3rem 7%;
+    background-color: turquoise;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.main-chose {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inner-chose {
+    text-align: center;
+}
+
+.chose-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+ .chose-icon i:hover{
+ 	color: red;
+ 	background-color: red;
+ 	transform: translateY(-25px);
+
+ }
+
+.inner-chose {
+    flex: 1 1 200px;
+}
+.inner-chose h2{
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+.inner-chose p{
+	font-size: 1.5rem;
+}
+.our-services{
+	padding: 5rem 7%;
+    
+}
+.main-services{
+	margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.inner-service{
+	flex: 1 1 300px;
+}
+
+.inner-service p{
+	font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+.inner-service a{
+    padding: 1.5rem 3rem;
+    background: yellow;
+    color: blue;
+    font-size: 20px;
+    border-radius: 15px;
+
+}
+.inner-service a:hover{
+    background: black;
+    color: white;
+}
+.our-services h1{
+	text-align: center;
+	font-size: 50px;
+	color: blueviolet;
+}
+.inner-service img{
+    transition: .5s;
+}
+.inner-service img:hover{
+    transform: translateY(-25px);
+
+}
+.customer-review{
+    padding: 4rem 7%;
+}
+.customer-review h1{
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.customer-review h1 span{
+    color: yellowgreen;
+
+}
+.main-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.inner-review{
+    flex: 1 1 300px;
+    padding: 1rem 2rem;
+    position: relative;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.28)0px 5px 10px;
+    transition: .5s;
+    top: 1rem;
+}
+.inner-review:hover{
+     transform: translateY(-25px);
+     background: blue;
+}
+.inner-review p
+{
+    font-size: 1.5rem;
+    padding: 2rem;
+    transition: .5s;
+}
+.inner-review p:hover{
+     transform: translateY(-25px);
+}
+.inner-review img{
+   
+    width: 50%;
+     transition: .5s;
+}
+.inner-review img:hover{
+    transform: translateY(-25px);
+
+}
+.inner-review i{
+    position: absolute;
+    font-size: 2rem;
+    left: 0;
+    color: yellow;
+}
+.inner-review:hover i{
+    background: white;
+}
+@media (max-width: 767px) {
+    html {
+        font-size: 55%;
+    }
+
+    #menu-bar {
+        position: absolute;
+        top: -1000%;
+        width: 80%;
+        left: 10%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+        transition: -5s;
+    }
+
+    .nav a {
+        color: white;
+        display: block;
+        margin-left: 1rem;
+        font-size: 20px;
+    }
+
+    .welcome img {
+        margin-top: 20px;
+        text-align: center;
+    }
+   .chose-text{
+   	padding: 1rem 2rem;
+   }
+}
